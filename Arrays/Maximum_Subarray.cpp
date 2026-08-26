@@ -1,0 +1,25 @@
+// LeetCode: Maximum Subarray
+// Difficulty: Medium
+// Topic: Array
+// Algorithm: Kadane's Algorithm
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int currSum = 0;
+        int maxSum = INT_MIN;
+
+        for (int val : nums) {
+            currSum += val;
+            maxSum = max(maxSum, currSum);
+
+            if (currSum < 0) {
+                currSum = 0;
+            }
+        }
+
+        return maxSum;
+    }
+};
