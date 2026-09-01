@@ -1,2 +1,5 @@
 # DSA-Cpp
-My Data Structures and Algorithms journey in C++, including solutions to problems solved on LeetCode.
+
+My journey of learning Data Structures and Algorithms in C++.
+
+Solutions to problems from LeetCode, Striver's A2Z DSA Sheet, and other sources.
